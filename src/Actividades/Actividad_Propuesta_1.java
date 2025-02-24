@@ -16,15 +16,15 @@ import java.util.Scanner;
 public class Actividad_Propuesta_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String repeticionT=JOptionPane.showInputDialog("Indica tu Repeticion: ");
-        int repeticion = Integer.parseInt(repeticionT);
-        mensajeEco(repeticion);
+        String repeticionT=JOptionPane.showInputDialog("Indica el número de repeticiones de 'ECO' → ");
+        int repeticiones = Integer.parseInt(repeticionT);
+        mensajeEco(repeticiones);
     }
 
     //Función ECO
     static void mensajeEco(int eco){
         for (int i=1; i<=eco; i++){
-            JOptionPane.showMessageDialog(null,"ECO " +(i));
+            JOptionPane.showMessageDialog(null,"ECO ");
         }
     }
 }
