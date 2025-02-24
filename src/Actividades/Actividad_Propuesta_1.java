@@ -19,6 +19,9 @@ public class Actividad_Propuesta_1 {
         String repeticionT=JOptionPane.showInputDialog("Indica el número de repeticiones de 'ECO' → ");
         int repeticiones = Integer.parseInt(repeticionT);
         mensajeEco(repeticiones);
+
+        //El dato recibido debe ser guardado en una variable del mismo tipo o hacer algo con el valor.
+        String nombre=pedirNombre();
     }
 
     //Función ECO
@@ -26,5 +29,12 @@ public class Actividad_Propuesta_1 {
         for (int i=1; i<=eco; i++){
             JOptionPane.showMessageDialog(null,"ECO ");
         }
+    }
+
+    //Esta función devuelve un valor de tipo String... return valor/Variable
+    static String pedirNombre(){
+        String nombre=JOptionPane.showInputDialog("Ingresa tu nombre → ");
+        return nombre;
+     // return "Alba"; → También se puede devolver de esta manera.
     }
 }
