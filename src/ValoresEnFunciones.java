@@ -21,6 +21,7 @@ public class ValoresEnFunciones {
         mostrarTexto("El texto a mostrar mediante una función");
     }
 
+
     /** Función que devuelve el mayor de dos números.
      * @param num1
      * @param num2
