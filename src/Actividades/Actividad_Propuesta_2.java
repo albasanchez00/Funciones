@@ -19,6 +19,10 @@ package Actividades;
 */
 
 public class Actividad_Propuesta_2 {
+    /* NOTA ->
+    Si los num no se declaran como static la funcion mostrarNumeros() va dentro
+    de la funcion mayorMenor().
+     */
     static int num1=18;
     static int num2=9;
     static int mayor;
