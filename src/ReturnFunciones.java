@@ -19,6 +19,8 @@ import java.util.Scanner;
 */
 
 public class ReturnFunciones {
+    static boolean correcto = false; // → Declaramos correcto como una variable Global.
+
     public static void main(String[] args) {
         // mostrarEdad() → Necesita un valor int que devolverá la función pedirEdad().
         mostrarEdad(pedirEdad());
@@ -28,7 +30,7 @@ public class ReturnFunciones {
 
     // Crear la función pedirEdad() y luego crea la funcion mostrarEdad().
     static int pedirEdad(){
-        boolean correcto=false;
+        correcto=false;
         int edad;
         // Solicitamos la edad →
         do{
@@ -49,7 +51,7 @@ public class ReturnFunciones {
     //Crear la función pedirNombre() y luego crea la funcion mostrarNombre().
     static String pedirNombre(){
         String nombre;
-        boolean correcto=false;
+        correcto=false;
         // Solicitamos el nombre →
         do{
             System.out.print("Ingresa tu nombre → ");;
