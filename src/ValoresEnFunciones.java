@@ -8,6 +8,7 @@ public class ValoresEnFunciones {
         //Mostramos cual de los valores es mayor →
         int mayor=mostrarMayor(num1,num1*10); //Almacenado el valor retornado en una variable.
         System.out.println("Lógicamente, el mayor es "+mayor);
+
         // Estas 3 líneas ↓
         num1=(int)(Math.random()*101);
         int num2=(int)(Math.random()*101);
