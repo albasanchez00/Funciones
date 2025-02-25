@@ -65,6 +65,10 @@ public class Actividad_Propuesta_4 {
      */
     static void mostrarResultado(char letra){
         boolean resultado=comprobarVocal(letra);
-        System.out.println("¿Es vocal?\n"+resultado);
+        if (resultado){
+            System.out.println("El letra es una vocal");
+        }else{
+            System.out.println("El letra no es una vocal");
+        }
     }
 }
