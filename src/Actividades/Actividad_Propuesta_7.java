@@ -9,5 +9,52 @@ package Actividades;
 6. Indica los segundos y conviertelos en días, horas, minutos y segundos
 */
 
+import java.util.Scanner;
+
 public class Actividad_Propuesta_7 {
+    public static void main(String[] args) {
+//        tipoMoneda(valorMoneda(convertirMoneda()));
+    }
+
+    static String tipoMoneda(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Indique el tipo de dolar (Americano o Canadiense) a convertir en euros (€)");
+        String moneda=sc.nextLine();
+        return moneda;
+    }
+    static double valorMoneda(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Introduce la cantidad a convertir -> ");
+        double valor=sc.nextDouble();
+        return valor;
+    }
+
+//    static String convertirMoneda(){
+//        Scanner sc=new Scanner(System.in);
+//        double dolarCanadiendse=0.65;
+//        double dolarAmericano=1.05;
+//        double euros=0;
+////        switch(moneda){
+////            case "Canadiense"->{
+////                if(valor<=0){
+////                    euros=valor*dolarCanadiendse;
+////                    System.out.println("El valor de "+moneda+" es: "+euros);
+////                }else {
+////                    System.out.println("El valor no puede ser cero o negativo");
+////                }
+////            }
+////            case "Americano"->{
+////                if(valor<=0){
+////                    euros=valor*1.05;
+////                    System.out.println("El valor de "+moneda+" es: "+euros);
+////                }else {
+////                    System.out.println("El valor no puede ser cero o negativo");
+////                }
+////            }
+////            default->{
+////                System.out.println("Indique el tipo de moneda correcto");
+////            }
+////        }
+////        return moneda;
+//    }
 }
