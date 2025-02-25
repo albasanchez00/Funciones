@@ -13,6 +13,8 @@ package Actividades;
 */
 
 
+import org.w3c.dom.ls.LSOutput;
+
 import javax.swing.*;
 import java.util.Scanner;
 
@@ -21,13 +23,8 @@ public class Actividad_Propuesta_3 {
         Scanner sc = new Scanner(System.in);
         double area, volumen;
         String opcionT="";
-        opcionT= JOptionPane.showInputDialog("""
-                    Indique una opcion: \
-      
-                    [1]→ Área del cilindro\
-                    
-                    [2]→ Volumen del cilindro""");
-        int opcion=Integer.parseInt(opcionT);
+        System.out.print("[1].Área Cilindro\n[2].Volumen Cilindro \nIndique una operación →");
+        int opcion=sc.nextInt();
 
         System.out.println("Indique el radio →");
         double radio=sc.nextDouble();
