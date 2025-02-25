@@ -27,13 +27,13 @@ public class Actividad_Propuesta_4 {
 //            System.out.println("El letra no es una vocal");
 //        }
 
-        mostrarResultado(solicitarLetra());
+        mostrarResultado();
     }
 
 
     /**
      * Función que solicita una letra y lla devuelve a quien invoque la función.
-     * @return
+     * @return letra
      */
     static char solicitarLetra(){
         char letra;
@@ -47,7 +47,6 @@ public class Actividad_Propuesta_4 {
     /**
      * Función que recibe una letra e indica con un booleanon si es una vocal o no.
      * @param letra
-     * @return
      */
     static boolean comprobarVocal(char letra){
         if (letra=='a' || letra=='e' || letra=='i' || letra=='o' || letra=='u' ||
@@ -59,12 +58,13 @@ public class Actividad_Propuesta_4 {
 
     }
 
+
     /**
      * Función que comprueba y devuelve el resultado de la comprobación, devolverá true / false
-     * @param letra
-     */
-    static void mostrarResultado(char letra){
-        boolean resultado=comprobarVocal(letra);
+    */
+    static void mostrarResultado(){
+        char miLetra=solicitarLetra();
+        boolean resultado=comprobarVocal(miLetra);
         if (resultado){
             System.out.println("El letra es una vocal");
         }else{
