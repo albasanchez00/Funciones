@@ -29,32 +29,32 @@ public class Actividad_Propuesta_7 {
         return valor;
     }
 
-//    static String convertirMoneda(){
-//        Scanner sc=new Scanner(System.in);
-//        double dolarCanadiendse=0.65;
-//        double dolarAmericano=1.05;
-//        double euros=0;
-////        switch(moneda){
-////            case "Canadiense"->{
-////                if(valor<=0){
-////                    euros=valor*dolarCanadiendse;
-////                    System.out.println("El valor de "+moneda+" es: "+euros);
-////                }else {
-////                    System.out.println("El valor no puede ser cero o negativo");
-////                }
-////            }
-////            case "Americano"->{
-////                if(valor<=0){
-////                    euros=valor*1.05;
-////                    System.out.println("El valor de "+moneda+" es: "+euros);
-////                }else {
-////                    System.out.println("El valor no puede ser cero o negativo");
-////                }
-////            }
-////            default->{
-////                System.out.println("Indique el tipo de moneda correcto");
-////            }
-////        }
-////        return moneda;
-//    }
+    static String convertirMoneda(String moneda, double valor){
+        Scanner sc=new Scanner(System.in);
+        double dolarCanadiendse=0.65;
+        double dolarAmericano=1.05;
+        double euros=0;
+        switch(moneda){
+            case "Canadiense"->{
+                if(valor<=0){
+                    euros=valor*dolarCanadiendse;
+                    System.out.println("El valor de "+moneda+" es: "+euros);
+                }else {
+                    System.out.println("El valor no puede ser cero o negativo");
+                }
+            }
+            case "Americano"->{
+                if(valor<=0){
+                    euros=valor*1.05;
+                    System.out.println("El valor de "+moneda+" es: "+euros);
+                }else {
+                    System.out.println("El valor no puede ser cero o negativo");
+                }
+            }
+            default->{
+                System.out.println("Indique el tipo de moneda correcto");
+            }
+        }
+        return moneda;
+    }
 }
